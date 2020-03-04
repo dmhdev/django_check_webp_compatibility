@@ -1,2 +1,4 @@
 # django_check_webp_compatibility
-Method that checks User Agent to see if Browser is Webp compatible
+Script that checks if User Browser is Webp compatible
+
+Uses [httpagentparser](https://pypi.org/project/httpagentparser/) Library.
