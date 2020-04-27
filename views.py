@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import httpagentparser
 
-def getMajorBrowserVersionAsInt(user_browser):
+def get_major_browser_version_as_int(user_browser):
   return int(user_browser['version'][:user_browser['version'].find('.')])
 
-def getWebpCompatibleBrowser(request):
+def get_webp_compatible_browser(request):
     webp_compatible_browsers = {'Firefox':65, 'Chrome':25, 'Edge':18, 'Opera':11}
     user_browser = httpagentparser.detect(request.META['HTTP_USER_AGENT'])['browser']
     
